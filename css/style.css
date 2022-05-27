@@ -26,8 +26,7 @@ text-decoration: none;
 
 /*------------------------ HEADER------------------- */
 .logo{
-    font-family: 'Raleway';
-        font-style: normal;
+    font-family: 'Raleway',sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -75,8 +74,7 @@ text-decoration: none;
          color: #FFFFFF;
 }
 .hero-btn{
-    font-family: 'Roboto';
-        font-style: normal;
+    font-family: 'Roboto',sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
@@ -146,7 +144,6 @@ text-decoration: none;
 }
 .logo-footer{
     font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -171,4 +168,40 @@ text-decoration: none;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/*------------------------PORTFOLIO------------------- */
+
+.products-btn{
+    font-family: 'Roboto',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        color:var(--secondary-header);
+        background-color: #F5F4FA;
+}
+.products-btn:hover,
+.products-btn:focus{
+    color:#FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.products-title {
+font-weight: 700;
+font-size: 18px;
+line-height:2;
+letter-spacing: 0.06em;
+color:var(--secondary-header);
+}
+
+.product-position{
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        color: #757575;
+
 }
