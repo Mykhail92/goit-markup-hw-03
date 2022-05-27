@@ -12,6 +12,10 @@ background: #2196F3; синий
 body{
  font-family:'Roboto', sans-serif;
 }
+h1,h2,h3,h4,h5,ul,p{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
 --accent-color: #2196F3;
 --secondary-header:#212121;
@@ -19,13 +23,33 @@ body{
 
 .list{
 list-style: none;
+padding: 0px;
+margin: 0px;
 }
 .link{
 text-decoration: none;
 }
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*------------------------ HEADER------------------- */
+.container-header{
+    display: flex;
+    align-items: center;
+    
+   
+}
+
 .logo{
+    padding: 24px 0 25px;
+
     font-family: 'Raleway',sans-serif;
         font-weight: 700;
         font-size: 26px;
@@ -33,22 +57,44 @@ text-decoration: none;
         letter-spacing: 0.03em;
         color: var(--accent-color);
         text-decoration: none;
+        
 }
 .logo-scndr{
     color: #000000;
 }
+.header-list{
+    display: flex;
+    margin-left: 93px;
+    
+}
+.header-list .header-item:not(:last-child){
+    margin-right: 50px;
+}
 .header-list .link{
-    font-weight: 500;
+        padding: 32px 0px;
+
+        font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--secondary-header);
+        
 }
 .header-list .link:hover,
 .header-list .link:focus{
     color:var(--accent-color);
+    
+ }
+ .header-contact{
+     display: flex;
+     margin-left: auto;
+ }
+ .header-contact .header-item:not(:last-child){
+     margin-right: 50px;
  }
  .header-contact .link{
+    padding: 32px 0px;
+
     font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -63,12 +109,13 @@ text-decoration: none;
 /*------------------------ HERO------------------- */
 .hero{
     background-color: #2F303A;
+    text-align: center;
+   
 }
 .hero-title{
     font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
          color: #FFFFFF;
@@ -79,12 +126,22 @@ text-decoration: none;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.06em;
+        border-radius: 4px;
         color: #FFFFFF;
         background-color: var(--accent-color);
 }
 
 /*------------------------ List of criteria------------------- */
+.criteria-list{
+    display: flex;
+    padding:94px 0;
+}
+.criteria-item:not(:last-child){
+    margin-right: 30px;
+}
 .criteria-header{
+    margin-bottom: 10px;
+
     font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -101,13 +158,27 @@ text-decoration: none;
 }
 
 /*------------------------ what are we doing------------------- */
+.work{
+    padding-bottom: 94px;
+}
 .work-title{
+    margin-bottom: 50px;
+    
+
     font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--secondary-header);
+}
+
+.work-list{
+    display: flex;
+    justify-content: center;  
+}
+.work-item:not(:last-child){
+    margin-right: 30px;
 }
 
 /*------------------------ Our team------------------- */
@@ -115,6 +186,8 @@ text-decoration: none;
     background-color: #F5F4FA;
 }
 .team-header{
+padding: 94px 0 50px;
+
     font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -123,27 +196,48 @@ text-decoration: none;
         color: var(--secondary-header);
 }
 
+.team-list{
+    display: flex;
+    justify-content: center;
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
+
+}
+.team-item{
+    padding-bottom: 94px;
+}
 .team-list-member{
-    font-weight: 500;
+        margin-top: 30px;
+
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+        text-align: center;
+
         color: var(--secondary-header);
 
 }
 .team-list-proffesion{
-    font-size: 16px;
+        margin-top: 10px;
+
+        font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+        text-align: center;
         color: var(--secondary-header);        
 }
 
 /*------------------------FOOTER------------------- */
 .footer{
     background-color:#2F303A;
+    padding-top: 60px;
 }
 .logo-footer{
-    font-family: 'Raleway';
+        
+
+        font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -154,15 +248,26 @@ text-decoration: none;
 .logo-footer-scndr{
     color: #FFFFFF;
 }
-.adress{
+.footer-adress{
     font-style: normal;
+}
+.adress{
+
+        
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
 }
+.footer-list{
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+.footer-item{
+    margin-top: 9px;
+}
 .footer-contact{
-    font-style: normal;
+
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
@@ -175,19 +280,31 @@ text-decoration: none;
 /*------------------------PORTFOLIO------------------- */
 
 .products-btn{
-    font-family: 'Roboto',sans-serif;
+        margin-bottom: 50px;
+        padding: 6px 22px;
+        margin-left: 8px;
+        border: none;
+    
+        font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
         letter-spacing: 0.03em;
+        border-radius: 4px;
         color:var(--secondary-header);
         background-color: #F5F4FA;
 }
+
 .products-btn:hover,
 .products-btn:focus{
     color:#FFFFFF;
     background-color: var(--accent-color);
+}
+.products-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
 }
 
 .products-title {
@@ -204,4 +321,22 @@ color:var(--secondary-header);
         letter-spacing: 0.03em;
         color: #757575;
 
+}
+.flex-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+.flex-item{
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width:calc(100%-60px)/3;
+}
+
+.flex-item:nth-child(3n){
+    margin-right: 0px;
+}
+.flex-item:nth-last-child(-n+3){
+    margin-bottom: 0px;
 }
