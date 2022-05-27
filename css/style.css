@@ -33,7 +33,6 @@ text-decoration: none;
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid tomato;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,6 +42,7 @@ text-decoration: none;
 .container-header{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
     
    
 }
