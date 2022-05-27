@@ -82,8 +82,7 @@ text-decoration: none;
 }
 .header-list .link:hover,
 .header-list .link:focus{
-    color:var(--accent-color);
-    
+    color:var(--accent-color); 
  }
  .header-contact{
      display: flex;
