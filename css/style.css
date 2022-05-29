@@ -30,7 +30,7 @@ margin: 0px;
 text-decoration: none;
 }
 .container{
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -113,6 +113,8 @@ text-decoration: none;
    
 }
 .hero-title{
+    margin-bottom: 30px;
+
     font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -134,9 +136,11 @@ text-decoration: none;
 }
 
 /*------------------------ List of criteria------------------- */
+.criteria{
+    padding: 94px 0;
+}
 .criteria-list{
     display: flex;
-    padding:94px 0;
     justify-content: center;
 }
 .criteria-item {
@@ -212,11 +216,13 @@ text-decoration: none;
     margin-right: 30px;
 
 }
-.team-item{
-    padding-bottom: 94px;
+.team-list-position{
+    padding: 30px 0;
+    background-color: #FFFFFF;
 }
+
 .team-list-member{
-        margin-top: 30px;
+        margin-bottom: 10px;
 
         font-weight: 500;
         font-size: 16px;
@@ -228,8 +234,6 @@ text-decoration: none;
 
 }
 .team-list-proffesion{
-        margin-top: 10px;
-
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
@@ -240,7 +244,7 @@ text-decoration: none;
 /*------------------------FOOTER------------------- */
 .footer{
     background-color:#2F303A;
-    padding-top: 60px;
+    padding: 60px 0;
 }
 .logo-footer{
         
@@ -269,7 +273,6 @@ text-decoration: none;
 }
 .footer-list{
     margin-top: 20px;
-    padding-bottom: 60px;
 }
 .footer-item{
     margin-top: 9px;
